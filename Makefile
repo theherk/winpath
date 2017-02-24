@@ -26,7 +26,7 @@ help:
 	$(MAKEFILE_LIST) | column -ts $$'\t' | \
 	grep --color '^[^ ]*'
 
-SYSTEMS := linux windows
+SYSTEMS := windows
 ARCHS := 386 amd64
 
 define PROGRAM_template
