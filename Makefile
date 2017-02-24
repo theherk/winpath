@@ -73,12 +73,12 @@ release: req-release-type req-release-repo clean ## package and upload a release
 
 req-release-type:
 ifndef RELEASE_TYPE
-    $(error RELEASE_TYPE is undefined)
+	$(error RELEASE_TYPE is undefined)
 endif
 
 req-release-repo:
 ifndef RELEASE_REPO
-    $(error RELEASE_REPO is undefined)
+	$(error RELEASE_REPO is undefined)
 endif
 
 test: test-unit ## run unit tests
